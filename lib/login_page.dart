@@ -23,15 +23,14 @@ class LoginPage extends StatelessWidget {
             SignInButton(
               Buttons.Google,
               onPressed: () {
-                _handleSignIn()
-                    .then((FirebaseUser user){
-                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => TabPage(user)));
-                    });
+                _handleSignIn();
+//                    .then((FirebaseUser user){
+//                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => TabPage(user)));
+//                    });
 //                    .catchError((e) => print(e));
               },
             )
           ],
-
         ),
       ),
     );
